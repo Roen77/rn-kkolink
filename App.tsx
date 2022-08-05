@@ -27,6 +27,7 @@ import {
   LearnMoreLinks,
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
+import KakaoTest from './KakaoTest';
 import TemplateExample from './TemplateExample';
 
 const Section: React.FC<
@@ -69,8 +70,11 @@ const App = () => {
   return (
     <SafeAreaView style={backgroundStyle}>
       <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
-      <TemplateExample />
-      <Text>teste</Text>
+      <ScrollView>
+        <TemplateExample />
+        <KakaoTest />
+        <Text>teste</Text>
+      </ScrollView>
     </SafeAreaView>
   );
 };
