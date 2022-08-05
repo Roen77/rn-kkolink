@@ -93,6 +93,7 @@ export default class TemplateExample extends Component {
       console.warn(e);
     }
   };
+  //manifest 키위치랑 kakao link 노드모듈 참고하기
 
   linkCommerce = async () => {
     try {
